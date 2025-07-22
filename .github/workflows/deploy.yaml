@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Make deploy.sh executable
+      - name: Make Deploy directory executable
         run: chmod -R 755 ./deploy/
 
       - name: Run Pre-Deploy Script
@@ -34,5 +34,5 @@ jobs:
           local-dir: ./transfer/
           server-dir: /
 
-      - name: Make HTTP Request to deploy.php
-        run: curl "${{ secrets.DEPLOY_URL }}/post-deploy.php"
+      - name: Make HTTP Request to Post-Deploy Script
+        run: curl "${{ secrets.DEPLOY_URL }}/deploy/post-deploy.php"
