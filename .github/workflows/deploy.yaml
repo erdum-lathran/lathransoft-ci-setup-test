@@ -18,6 +18,9 @@ jobs:
         with:
           node-version: 20
 
+      - name: Make deploy.sh executable
+        run: chmod 755 ./deploy.sh
+
       - name: Run Deploy Script
         run: ./deploy.sh
 
