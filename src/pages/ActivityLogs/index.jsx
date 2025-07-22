@@ -1,4 +1,4 @@
-import ClockIcon from '../../../public/assets/images/ClockIcon.svg';
+import ClockIcon from '../../../public/assets/images/clockIcon.svg';
 import DotedLineIcon from '../../../public/assets/images/dotedLineIcon.svg';
 
 const logs = [

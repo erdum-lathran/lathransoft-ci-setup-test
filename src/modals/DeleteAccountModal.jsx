@@ -1,6 +1,6 @@
 import React, { useImperativeHandle, forwardRef, useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import DeleteAccount from '../../public/assets/images/DeleteAccount.svg';
+import DeleteAccount from '../../public/assets/images/deleteAccount.svg';
 
 const DeleteAccountModal = forwardRef((_, ref) => {
   const [data, setData] = useState({

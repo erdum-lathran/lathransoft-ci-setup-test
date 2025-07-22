@@ -5,7 +5,7 @@ DEPLOY_DIRECTORY="./deploy/"
 
 git checkout $DEPLOY_BRANCH
 
-npm install -f
+npm ci
 
 npm run build
 
