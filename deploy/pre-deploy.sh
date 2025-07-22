@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 DEPLOY_BRANCH="main"
 DEPLOY_DIRECTORY="./deploy/"
