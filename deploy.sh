@@ -12,8 +12,10 @@ cd $PROJECT_DIRECTORY
 
 npm install -f
 
+tar -czf /tmp/project.tar.gz ./*
+
 mkdir -p $DEPLOY_DIRECTORY
 
-mv $DEPLOY_SCRIPT $DEPLOY_DIRECTORY
+mv /tmp/project.tar.gz $DEPLOY_DIRECTORY/
 
-tar --exclude='.deploy/' -czf $DEPLOY_DIRECTORY/project.tar.gz ./*
+mv $DEPLOY_SCRIPT $DEPLOY_DIRECTORY
