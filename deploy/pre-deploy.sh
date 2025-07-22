@@ -10,7 +10,7 @@ npm ci
 
 npm run build
 
-tar -czf /tmp/dist.tar.gz ./dist .
+tar -czf /tmp/dist.tar.gz -C ./dist .
 
 mkdir ./transfer
 
