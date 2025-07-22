@@ -8,6 +8,7 @@ run_command("tar -xf $tar_file -C $extract_to");
 run_command('cp -f ../htaccess.example ../.htaccess');
 run_command('rm -f ./.ftp-deploy-sync-state.json');
 run_command('rm -f ./deploy.php');
+run_command("rm -f $tar_file");
 exit('Deployment script successfully executed');
 
 function run_command($command)

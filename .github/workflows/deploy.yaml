@@ -35,4 +35,4 @@ jobs:
           server-dir: /
 
       - name: Make HTTP Request to deploy.php
-        run: curl "${{ secrets.DEPLOY_URL }}/deploy/deploy.php"
+        run: curl "${{ secrets.DEPLOY_URL }}/deploy.php"
