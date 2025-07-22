@@ -5,7 +5,7 @@ $extract_to = __DIR__.'/';
 
 run_command("tar -xzf $tar_file -C $extract_to");
 // run_command('cp -f ../.env.production ../.env');
-run_command('cp -f ../htaccess.example ../.htaccess');
+run_command("cp -f ./htaccess.example ../.htaccess");
 // run_command('rm -f ./.ftp-deploy-sync-state.json');
 run_command("rm -f $tar_file");
 run_command("rm -rf ./deploy");
