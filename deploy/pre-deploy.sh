@@ -16,4 +16,4 @@ mkdir ./transfer
 
 mv /tmp/dist.tar.gz ./transfer/
 
-mv $DEPLOY_DIRECTORY* ./transfer/
+mv $DEPLOY_DIRECTORY ./transfer/
