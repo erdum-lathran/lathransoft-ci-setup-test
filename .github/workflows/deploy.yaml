@@ -32,7 +32,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: ./deploy/
-          server-dir: /lathransoft-ci-setup-test/
+          server-dir: /
 
       - name: Make HTTP Request to deploy.php
         run: curl "${{ secrets.DEPLOY_URL }}/deploy/deploy.php"
