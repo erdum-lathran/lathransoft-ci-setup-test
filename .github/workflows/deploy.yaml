@@ -19,10 +19,10 @@ jobs:
           node-version: 20
 
       - name: Make deploy.sh executable
-        run: chmod 755 ./deploy.sh
+        run: chmod -R 755 ./deploy/
 
-      - name: Run Deploy Script
-        run: ./deploy.sh
+      - name: Run Pre-Deploy Script
+        run: ./deploy/pre-deploy.sh
 
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -31,8 +31,8 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
-          local-dir: ./deploy/
+          local-dir: ./transfer/
           server-dir: /
 
       - name: Make HTTP Request to deploy.php
-        run: curl "${{ secrets.DEPLOY_URL }}/deploy.php"
+        run: curl "${{ secrets.DEPLOY_URL }}/post-deploy.php"
