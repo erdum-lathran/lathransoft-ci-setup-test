@@ -1,10 +1,7 @@
 #!/bin/bash
 
 DEPLOY_BRANCH="main"
-PROJECT_DIRECTORY="../"
 DEPLOY_DIRECTORY="./deploy/"
-
-cd $PROJECT_DIRECTORY
 
 git checkout $DEPLOY_BRANCH
 
