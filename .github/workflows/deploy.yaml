@@ -24,15 +24,16 @@ jobs:
       - name: Run Pre-Deploy Script
         run: ./deploy/pre-deploy.sh
 
-      - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      - name: Transfer files via SSH
+        uses: appleboy/scp-action@v1
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
-          local-dir: ./transfer/
-          server-dir: /
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
+          port: ${{ secrets.SSH_PORT }}
+          source: "./transfer/"
+          target: ${{ secrets.SSH_TARGET }}
 
       - name: Execute remote SSH commands using SSH key
         uses: appleboy/ssh-action@v1
