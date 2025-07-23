@@ -1,0 +1,62 @@
+export const Messages = {
+  internalServerError:
+    'An internal server error occurred. Please try again later.',
+  databaseConnectionError:
+    'Unable to connect to the database. Please try again later.',
+  duplicateEntryError: 'Duplicate entry detected. Please use unique values.',
+  validationError: 'Validation failed. Please check the input data.',
+  notFoundError: 'The requested resource was not found.',
+  unauthorizedError: 'You are not authorized to perform this action.',
+  forbiddenError: 'You do not have permission to access this resource.',
+  badRequestError: 'Bad request. Please check the input data.',
+  conflictError:
+    'Conflict detected. The request could not be completed due to a conflict with the current state of the target resource.',
+  createdSuccessfully: 'Created successfully.',
+  getSuccessfully: 'Get successfully.',
+  updatedSuccessfully: 'Updated successfully.',
+  deletedSuccessfully: 'Deleted successfully.',
+  loginSuccess: 'Login successful.',
+  logoutSuccess: 'Logout successful.',
+  registrationSuccess: 'Registration successful.',
+  passwordResetSuccess: 'Password reset successful.',
+  passwordChangeSuccess: 'Password changed successfully.',
+  invalidCredentials: 'Invalid credentials. Please try again.',
+  accountLocked: 'Your account is locked. Please contact support.',
+  accountDisabled: 'Your account is disabled. Please contact support.',
+  accountNotVerified:
+    'Your account is not verified. Please check your email for verification instructions.',
+  sessionExpired: 'Your session has expired. Please log in again.',
+  tokenExpired: 'Your token has expired. Please request a new one.',
+  tokenInvalid: 'Invalid token. Please request a new one.',
+  resourceNotFound: 'Resource not found.',
+  emailSent: 'Email sent successfully.',
+  emailNotSent: 'Failed to send email. Please try again later.',
+  serviceUnavailable:
+    'Service is temporarily unavailable. Please try again later.',
+  userFound: 'Email & Username Alreay Exist.',
+  loginFailed: 'Login Failed',
+  fileNotFound: 'provide atleast one file',
+  fileUploaded: 'Files added to the queue successfully.', // File uploaded successfully
+  invalidKeyFileUpload: 'Upload failed: The provided AWS Access Key ID is invalid; please check your credentials and try again.',
+  documentFavorite: 'Document favorited successfully.',
+  documentUnFavorite: 'Document unfavorited successfully.',
+  documentArchived: 'Document archived successfully.',
+  documentUnArchived: 'Document unarchived successfully.',
+  folderCreated: 'Folder Created Successfully',
+  linkCreated: 'Link created successfully.',
+  documentRestored: 'Document restored successfully.',
+  documentPermanentlyDeleted: 'Document permanently deleted successfully.',
+  documentDeleted: 'Document deleted successfully.',
+  documentCopied: 'Document copied successfully.',
+  documentMoved: 'Document moved successfully.',
+  documentRenamed: 'Document renamed successfully.',
+  documentTrashEmptyed: 'Trash emptied successfully.',
+  documentShared: 'Document shared successfully.',
+};
+
+export const EmailSubjects = {
+  shareDocument: 'File Shared with You',
+  welcome: 'Welcome to LathranSuite',
+  resetPassword: 'Reset Password',
+  verifyEmail: 'Verify Email', 
+}

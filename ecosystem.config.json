@@ -1,0 +1,12 @@
+{
+    "apps": [
+      {
+        "name": "Dms-v2",
+        "script": "dist/main.js", 
+        "watch": false, 
+        "instances": "1", 
+        "exec_mode": "cluster"
+      }
+    ]
+  }
+  
