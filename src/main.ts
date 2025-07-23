@@ -11,7 +11,7 @@ import * as express from 'express';
 import { join } from 'path';
 import { logFile, overrideConsole } from './utils/logger';
 import { RedisIoAdapter } from './config/redis.adapter';
-import { WsAdapter } from '@nestjs/platform-ws';
+// import { WsAdapter } from '@nestjs/platform-ws';
 
 overrideConsole();
 
