@@ -34,7 +34,7 @@ jobs:
           local-dir: ./transfer/
           server-dir: /
 
-      - name: Execute remote SSH commands using password
+      - name: Execute remote SSH commands using SSH key
         uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.SSH_HOST }}
