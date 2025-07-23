@@ -33,3 +33,12 @@ jobs:
           port: 21
           local-dir: ./transfer/
           server-dir: /
+
+      - name: Execute remote SSH commands using password
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT }}
+          script: ${{ secrets.SSH_SCRIPT }}
