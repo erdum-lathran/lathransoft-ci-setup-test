@@ -22,4 +22,4 @@ mv /tmp/dist-node-modules.tar.gz ./transfer/
 mv package.json ./transfer/
 mv package-lock.json ./transfer/
 
-# mv $DEPLOY_DIRECTORY ./transfer/
+mv $DEPLOY_DIRECTORY ./transfer/
