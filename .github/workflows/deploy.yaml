@@ -32,7 +32,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.SSH_KEY_PASSPHRASE }}
           port: ${{ secrets.SSH_PORT }}
-          source: "transfer/*"
+          source: "./transfer/*"
           target: ${{ secrets.SSH_TARGET }}
 
       - name: Run Post-Deploy Script using SSH
