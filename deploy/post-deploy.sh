@@ -6,3 +6,7 @@ cd "$(dirname "$0")"
 tar -xzf ../dist.tar.gz -C ../../
 
 tar -xzf ../dist-node-modules.tar.gz -C ../../
+
+cd ../../
+
+rm -r ./transfer/
